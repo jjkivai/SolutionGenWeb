@@ -4,7 +4,7 @@ deployment:
     # Set paths
     - export REPO_DIR=/home/solutio2/repositories/SolutionGenWeb
     - export APP_DIR=/home/solutio2/SolutionsWeb
-    - export DJANGO_SETTINGS_MODULE=Clinic.settings
+    - export DJANGO_SETTINGS_MODULE=SolutionsGen.settings
 
     # Copy updated code to app directory (delete old files first for clean sync)
     - rm -rf $APP_DIR/*
