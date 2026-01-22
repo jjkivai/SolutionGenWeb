@@ -1,0 +1,93 @@
+{% extends "_base.html" %}
+{% load static %}
+{% block title %}Solutions General LTD{% endblock title %}
+
+{% block content %}
+<section class="relative h-[90vh] flex items-center bg-fixed bg-cover bg-center bg-no-repeat "
+    style="background-image: url('{% static 'images/DataServer.jpg' %}');">
+    <!-- Overlay using ::before -->
+    <div class="before:absolute before:inset-0 before:bg-black/50"></div>
+
+    <div class="w-full p-8 mx-12 z-10 relative">
+        <div class="w-full place-self-center lg:col-span-7">
+            <h1 class="max-w-2xl mb-6 text-4xl font-bold tracking-tight leading-none text-6xl text-white">
+                <span class="block w-full text-primary-500">
+                    QUALITY
+                </span>
+                <span class="block w-full">
+                    YOU CAN TRUST
+                </span>
+            </h1>
+            <p class="max-w-2xl mb-6 mt-8 font-medium text-white lg:mb-8 text-2xl ">
+                Your Electrical, Communications and Security Engineering Solutions Provider</p>
+        </div>
+    </div>
+</section>
+<section class="bg-grey-50">
+    <div class="p-4 mx-auto max-w-screen-xl lg:px-6 justify-center">
+        <div class="max-w-screen-md mb-8 lg:mb-8 mx-auto text-center">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 mx-auto">WHAT WE DO
+            </h2>
+            <!-- <p class="text-gray-500 sm:text-xl dark:text-gray-400">We focus on markets where
+                technology, innovation, and capital can unlock long-term value and drive economic growth.</p> -->
+        </div>
+        <div class="grid grid-cols-4 gap-4">
+            <div class="flex flex-col justify-center text-center">
+                <div class="mx-auto flex justify-center items-center mb-4 w-15 h-15">
+                    <svg class="w-16 h-16" fill="currentColor" focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                        style="color: rgb(255, 152, 0);">
+                        <path d="M7 2v11h3v9l7-12h-4l4-8z"></path>
+                    </svg>
+                </div>
+                <h3 class="mb-2 text-xl font-bold">Power Distribution</h3>
+                <p class="text-gray-500 dark:text-gray-400">We design, build and install power boards ranging from
+                    simple supply to automated changeover units.
+                </p>
+            </div>
+            <div class="flex flex-col justify-center text-center">
+                <div class="mx-auto flex justify-center items-center mb-4 w-15 h-15">
+                    <svg class="w-16 h-16" focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                        style="color: rgb(153, 153, 153);" fill="currentColor">
+                        <path
+                            d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="mb-2 text-xl font-bold">Security And Surveillance</h3>
+                <p class="text-gray-500 dark:text-gray-400">Installation of state of the art monitoring and control
+                    systems ensuring top-notch security.</p>
+            </div>
+            <div class="flex flex-col justify-center text-center">
+                <div class="mx-auto flex justify-center items-center mb-4 w-15 h-15 ">
+                    <svg class="w-16 h-16" style="color: rgb(244, 67, 54);" fill="currentColor" focusable="false"
+                        viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M20 13H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-6c0-.55-.45-1-1-1zM7 19c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM20 3H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1zM7 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="mb-2 text-xl font-bold">Servers And Networks</h3>
+                <p class="text-gray-500 dark:text-gray-400">ASpecialists in building and maintaing servers and network
+                    systems that will guarantee speed and efficiency.
+
+                </p>
+            </div>
+            <div class="flex flex-col justify-center text-center">
+                <div class="mx-auto flex justify-center items-center mb-4 w-15 h-15">
+                    <svg class="w-16 h-16" fill="currentColor" style="color: rgb(76, 175, 80);" focusable="false"
+                        viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M6.05 8.05c-2.73 2.73-2.73 7.15-.02 9.88 1.47-3.4 4.09-6.24 7.36-7.93-2.77 2.34-4.71 5.61-5.39 9.32 2.6 1.23 5.8.78 7.95-1.37C19.43 14.47 20 4 20 4S9.53 4.57 6.05 8.05z">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="mb-2 text-xl font-bold">Green Energy</h3>
+                <p class="text-gray-500 dark:text-gray-400">We install and commission photovoltaic panels (solar) as we
+                    move to reduce carbon emmisions.</p>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+{% endblock content %}

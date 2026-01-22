@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../../node_modules/flowbite";
+
+@plugin "flowbite-typography";
+
+:root {
+  --font-body:
+    Roboto, ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --font-sans:
+    Roboto, ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+@theme {
+  --color-primary-50: #ffe5ea;
+  --color-primary-100: #ffccd5;
+  --color-primary-200: #ff99ab;
+  --color-primary-300: #ff6680;
+  --color-primary-400: #ff3355;
+  --color-primary-500: #eb183c;
+  --color-primary-600: #d21434;
+  --color-primary-700: #b2102b; /* your base */
+  --color-primary-800: #930c23;
+  --color-primary-900: #73081a;
+  --color-primary-950: #5a0614;
+}

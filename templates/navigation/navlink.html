@@ -1,0 +1,9 @@
+{% for route in routes %}
+<li>
+    <a href="{% url route.url %}" {% if route.active %}
+        class="block py-2 px-3 text-white rounded md:text-primary-700 md:p-0 md:dark:text-primary-500 uppercase"
+        aria-current="page" {% else %} class="block py-2 px-3 rounded md:p-0 md:hover:text-primary-500 text-white uppercase
+          group-[.scrolled]:text-black
+          group-[.scrolled]:hover:text-primary-700" {% endif %}>{{ route.name }}</a>
+</li>
+{% endfor %}

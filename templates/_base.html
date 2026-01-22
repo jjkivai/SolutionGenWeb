@@ -1,0 +1,52 @@
+<!-- templates/_base.html -->
+
+{% load compress %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}" />
+
+    <title>{% block title %}Solutions General LTD{% endblock title %}</title>
+
+    {# compress css #}
+    <link rel="stylesheet" href="{% static 'css/output.css' %}" />
+    {# endcompress #}
+</head>
+
+<body class="w-full bg-gray-200">
+    {% include 'navigation/navbar.html' %}
+    <div class="relative isolate divide-y divide-gray-100">
+
+        <main class=" mx-auto bg-gray-200">{% block content %} {% endblock content %}</main>
+    </div>
+
+    <hr class="border-gray-200 mx-4 dark:border-gray-700" />
+
+    {% include '_footer.html' %}
+
+    {% compress js %}
+    <script src="{% static 'js/flowbite.min.js' %}"></script>
+    <script>
+        const navbar = document.getElementById('navbar')
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.remove('bg-transparent')
+                navbar.classList.add('bg-white/90', 'backdrop-blur', 'shadow', 'scrolled')
+            } else {
+                navbar.classList.add('bg-transparent')
+                navbar.classList.remove('bg-white/90', 'backdrop-blur', 'shadow', 'scrolled')
+            }
+        })
+    </script>
+    {% endcompress %}
+</body>
+
+</html>
