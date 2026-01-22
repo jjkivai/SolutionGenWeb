@@ -1,0 +1,21 @@
+---
+deployment:
+  tasks:
+    # Set paths
+    - export REPO_DIR=/home/solutio2/repositories/SolutionsWeb
+    - export APP_DIR=/home/solutio2/Python_Host
+    - export DJANGO_SETTINGS_MODULE=Clinic.settings
+
+    # Copy updated code to app directory (delete old files first for clean sync)
+    - rm -rf $APP_DIR/*
+    - cp -R $REPO_DIR/* $APP_DIR/
+
+    # Activate virtualenv
+    - source /home/solutio2/virtualenv/Python_Host/3.12/bin/activate
+
+    # Install/update Python packages
+    - cd $APP_DIR
+    - pip install -r requirements.txt
+
+    # Collect static files
+    - python manage.py collectstatic --noinput
