@@ -2,7 +2,7 @@
 deployment:
   tasks:
     # Set paths
-    - export REPO_DIR=/home/solutio2/repositories/SolutionsWeb
+    - export REPO_DIR=/home/solutio2/repositories/SolutionGenWeb
     - export APP_DIR=/home/solutio2/SolutionsWeb
     - export DJANGO_SETTINGS_MODULE=Clinic.settings
 
